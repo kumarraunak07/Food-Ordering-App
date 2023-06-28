@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddFoodItem"
+    android:background="@drawable/home_background_1">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CarveYourFood"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+    <TextView
+        android:id="@+id/add_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item's"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="160dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:fontFamily="@font/poppins_light"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/item_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/select_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Item Image" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_name_cont"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Item Name"
+        app:boxBackgroundColor="#C9F1D0"
+        android:layout_below="@id/item_image_view"
+        android:layout_centerHorizontal="true"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:startIconDrawable="@drawable/ic_baseline_fastfood_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_description_cont"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Item Description"
+        app:boxBackgroundColor="#C9F1D0"
+        android:layout_below="@id/item_name_cont"
+        android:layout_centerHorizontal="true"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:startIconDrawable="@drawable/ic_baseline_description_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textLongMessage"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_ingredients_cont"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ingredient's"
+        app:boxBackgroundColor="#C9F1D0"
+        android:layout_below="@id/item_description_cont"
+        android:layout_centerHorizontal="true"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:startIconDrawable="@drawable/ic_baseline_ingredients_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/item_cost_cont"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Item Cost"
+        app:boxBackgroundColor="#C9F1D0"
+        android:layout_below="@id/item_ingredients_cont"
+        android:layout_centerHorizontal="true"
+        app:boxCornerRadiusTopEnd="30dp"
+        app:boxCornerRadiusTopStart="30dp"
+        app:startIconDrawable="@drawable/ic_rupee"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/item_cost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/add_item_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:layout_below="@id/item_cost_cont"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

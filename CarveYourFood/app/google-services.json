@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "414460130808",
+    "firebase_url": "https://carveurfood-default-rtdb.firebaseio.com",
+    "project_id": "carveurfood",
+    "storage_bucket": "carveurfood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414460130808:android:c6f0e65bfb4531bc30520d",
+        "android_client_info": {
+          "package_name": "com.example.carvefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414460130808-grovmsfmktg8pthgood2pc229ucu9ct0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZSfRLwKxz-EIXcyeNWgUnRneysmCXAbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414460130808-grovmsfmktg8pthgood2pc229ucu9ct0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414460130808:android:098ccd03e2ef45a530520d",
+        "android_client_info": {
+          "package_name": "com.example.carveyourfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414460130808-grovmsfmktg8pthgood2pc229ucu9ct0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZSfRLwKxz-EIXcyeNWgUnRneysmCXAbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414460130808-grovmsfmktg8pthgood2pc229ucu9ct0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
